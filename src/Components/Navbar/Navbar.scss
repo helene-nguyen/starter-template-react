@@ -1,0 +1,15 @@
+nav {
+  font-size: 0.75rem;
+}
+
+li {
+  display: inline-block;
+
+  & a {
+    margin: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+

@@ -1,0 +1,28 @@
+@use './vars.scss';
+
+//~ FLEXBOX
+@mixin flexbox($justify, $align-items, $direction: true) {
+  display: flex;
+
+  @if $direction {
+    flex-direction: $direction;
+  }
+
+  justify-content: $justify;
+  align-items: $align-items;
+}
+
+//~ THEMIFY
+@mixin themify($themes) {
+  @each $nameTheme, $values in $themes {
+    .theme--#{$nameTheme} {
+      $theme-map : $values !global;
+      @content;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
+

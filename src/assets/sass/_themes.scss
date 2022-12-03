@@ -1,0 +1,61 @@
+@use './mixins.scss';
+@use './vars.scss';
+
+//& THEMIFY
+@include mixins.themify(vars.$themeSite) {
+  transition: all 0.3s ease-in-out;
+  background-color: mixins.themed('background');
+
+  h1,
+  h2 {
+    color: mixins.themed('title');
+  }
+
+  a {
+    color: mixins.themed('link');
+  }
+
+  p {
+    color: mixins.themed('text');
+  }
+
+
+  header {
+    // transition: all 0.30s ease-in-out;
+    background-color: mixins.themed('background');
+  }
+
+  footer {
+    // transition: all 0.30s ease-in-out;
+    background-color: mixins.themed('background');
+  }
+
+  .spinner {
+    stroke: mixins.themed('spinner');
+  }
+
+}
+
+
+
+@include mixins.themify(vars.$themeBtn) {
+ 
+  .button {
+    &__form {
+      background-color: mixins.themed('background');
+      &:hover{
+        background-color: mixins.themed('bgButton');
+      }
+      &:active {
+        background-color: mixins.themed('bgButtonActive');
+      }
+    }
+  }
+
+}
+
+//& Theme Navbar
+@include mixins.themify(vars.$themeNavbar) {
+
+}
+

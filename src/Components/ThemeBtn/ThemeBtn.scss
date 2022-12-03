@@ -1,0 +1,24 @@
+@use '../../assets/sass/vars.scss';
+
+.button {
+    margin: auto 0;
+
+  &__form {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    cursor:pointer;
+    transition: all 0.25s ease-in-out;
+
+    &:hover {
+      transform: scale(0.8);
+    }
+
+    &:active {
+      transition: all 0.10s;
+      transform: scale(1);
+      opacity: 0.1;
+    }
+  }
+}
+

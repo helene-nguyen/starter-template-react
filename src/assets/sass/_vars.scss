@@ -1,0 +1,82 @@
+//~ Fonts families
+
+/*
+@font-face {
+  font-family: 'yourFont';
+  src: local('yourFont'), url('../fonts/yourFont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'yourFont-Bolder';
+  src: local('yourFont-Bolder'), url('../fonts/yourFont-ExtraBold.woff2') format('woff2');
+  font-weight: bolder;
+}
+
+$font-yourFont: 'yourFont';
+$font-yourFont2: 'yourFont2';
+
+*/
+
+//~ Main palette
+$dark-01: #1d1e1c;
+$dark-02: #1c1b1c;
+$dark-03: #272629;
+$light-01: #fefcff;
+$light-02: #fff;
+$red-01: #d40035;
+
+//~ Box shadows
+$box-shadow-01: rgba(0, 0, 0, 0.2) 0px 0px 50px 8px;
+$box-shadow-02: rgba(0, 0, 0, 0.3) 0px 0px 25px 5px;
+
+//~ Drop shadow
+$drop-shadow-01: drop-shadow(2px 3px 2px rgba(0, 0, 0, 0.3));
+
+//& Theme Global
+$themeSite: (
+  light: (
+    background: $light-01,
+    title: $red-01,
+    text: $dark-01,
+    link: $dark-01,
+    spinner: $dark-01,
+  ),
+  dark: (
+    background: $dark-01,
+    title: $red-01,
+    text: $light-01,
+    link: $light-01,
+    spinner: $light-01,
+  ),
+);
+
+//& Theme Buttons
+$themeBtn: (
+  light: (
+    background: $dark-01,
+    backgroundHover: $light-02,
+    backgroundActive: $light-01,
+
+    text: $dark-01,
+    textHover: $dark-02,
+    textActive: $dark-02,
+  ),
+  dark: (
+    background: $light-01,
+    backgroundHover: $dark-02,
+    backgroundActive: $dark-01,
+
+    text: $light-01,
+    textHover: $light-02,
+    textActive: $light-02,
+  ),
+);
+
+//& Theme Buttons
+$themeNavbar: (
+  light: (
+  ),
+  dark: (
+  ),
+);
+

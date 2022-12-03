@@ -1,0 +1,9 @@
+.footer {
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  & p {
+    font-size: 0.7rem;
+  }
+}
+
