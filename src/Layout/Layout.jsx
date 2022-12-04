@@ -20,7 +20,7 @@ const Layout = ({ pages }) => {
 
   return (
     <div className={`layout theme--${theme}`}>
-      <Header handleToggleMode={setTheme} theme={theme} pages={pages} />
+      <Header handleToggleMode={setTheme} theme={theme} />
       <main>
         <Spinner />
         <Outlet />
