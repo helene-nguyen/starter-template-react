@@ -5,23 +5,25 @@ import './Navbar.scss';
 import { NavLink } from 'react-router-dom';
 
 //& Import Routes
-import { NavbarLink } from '../../Routes/Routes'
+import { Router } from '../../Routes/Routes';
 
 const Navbar = () => {
   return (
     <nav>
       <ul>
-        {NavbarLink.map(({id, name, mainPath}) => (
-          <li key={id}>
-            <NavLink className={({ isActive }) => isActive ? 'menu--active' : 'menu'} to={mainPath} >
-              {name}
-            </NavLink>
-          </li>
-        ))}
+        {Router.map(
+          ({ id, name, mainPath }) =>
+            name !== 'NoPage' && (
+              <li key={id}>
+                <NavLink className={({ isActive }) => (isActive ? 'menu--active' : 'menu')} to={mainPath}>
+                  {name}
+                </NavLink>
+              </li>
+            )
+        )}
       </ul>
     </nav>
   );
-}
+};
 
 export default Navbar;
-

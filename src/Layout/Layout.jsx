@@ -11,13 +11,16 @@ import { Spinner } from '../Components';
 //& Import SCSS
 import './Layout.scss';
 
-const Layout = () => {
+const Layout = ({ pages }) => {
   // -------------- Dark Mode
-  const [theme, handleThemeChange] = useTheme();
+  const [theme, setTheme] = useTheme();
+
+  // Detecting mobile or not
+  // console.log(window.navigator.userAgentData.mobile)
 
   return (
     <div className={`layout theme--${theme}`}>
-      <Header handleToggleMode={handleThemeChange} theme={theme} />
+      <Header handleToggleMode={setTheme} theme={theme} pages={pages} />
       <main>
         <Spinner />
         <Outlet />

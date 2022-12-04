@@ -9,12 +9,11 @@ import { Routes, Route } from 'react-router-dom';
 import './App.scss';
 
 const App = () => {
-
-  const mapRouter = Router.map(({id, name, mainPath, mainElement}) => <Route key={id} path={mainPath} element={mainElement} />);
+  const mapRouter = Router.map(({ id, name, mainPath, mainElement }) => <Route key={id} path={mainPath} element={mainElement} />);
 
   return (
     <Routes>
-      <Route path="/" element={<Layout/>}>
+      <Route path="/" element={<Layout pages={Router} />}>
         {mapRouter}
       </Route>
     </Routes>
@@ -22,4 +21,3 @@ const App = () => {
 };
 
 export { App };
-

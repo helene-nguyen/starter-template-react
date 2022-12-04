@@ -12,5 +12,5 @@ const NavbarLink = [
   { id: 2, name: 'Articles', mainPath: '/articles' },
 ];
 
-export { Router, NavbarLink };
+export { Router };
 
