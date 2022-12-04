@@ -12,31 +12,19 @@ import { Spinner } from '../Components';
 import './Layout.scss';
 
 const Layout = () => {
-
-  const [theme, handleThemeChange] = useTheme();
   // -------------- Dark Mode
-  const [isDarkMode, setIsDarkMode] = useState(true);
-  
-  const handleDarkModeChange = () => {
-    setIsDarkMode(!isDarkMode);
-  };
+  const [theme, handleThemeChange] = useTheme();
 
-  const changeMode = () => {
-    return isDarkMode ? 'dark' : 'light';
-  };
-  // --------------
- 
   return (
     <div className={`layout theme--${theme}`}>
-      <Header  onDarkModeToggle={handleThemeChange} theme={theme} />
+      <Header handleToggleMode={handleThemeChange} theme={theme} />
       <main>
         <Spinner />
         <Outlet />
       </main>
-      <Footer changeMode={handleThemeChange}/>
+      <Footer theme={theme} />
     </div>
   );
 };
 
 export default Layout;
-
