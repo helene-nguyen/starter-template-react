@@ -1,6 +1,7 @@
 //& Import Module
 import { Outlet } from 'react-router-dom';
 import { useState } from 'react';
+import { useTheme } from '../Hooks/useTheme';
 
 //& Imports Components
 import Footer from './Footer/Footer';
@@ -12,6 +13,7 @@ import './Layout.scss';
 
 const Layout = () => {
 
+  const [theme, handleThemeChange] = useTheme();
   // -------------- Dark Mode
   const [isDarkMode, setIsDarkMode] = useState(true);
   
@@ -25,13 +27,13 @@ const Layout = () => {
   // --------------
  
   return (
-    <div className={`layout theme--${changeMode()}`}>
-      <Header  onDarkModeToggle={handleDarkModeChange} changeMode={changeMode} />
+    <div className={`layout theme--${theme}`}>
+      <Header  onDarkModeToggle={handleThemeChange} theme={theme} />
       <main>
         <Spinner />
         <Outlet />
       </main>
-      <Footer changeMode={changeMode}/>
+      <Footer changeMode={handleThemeChange}/>
     </div>
   );
 };
