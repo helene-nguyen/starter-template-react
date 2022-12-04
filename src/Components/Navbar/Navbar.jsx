@@ -9,13 +9,13 @@ import { Router } from '../../Routes/Routes';
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className='navbar'>
       <ul>
         {Router.map(
           ({ id, name, mainPath }) =>
             name !== 'NoPage' && (
               <li key={id}>
-                <NavLink className={({ isActive }) => (isActive ? 'menu--active' : 'menu')} to={mainPath}>
+                <NavLink className={({ isActive }) => (isActive ? 'navbar__item--active' : 'navbar__item')} to={mainPath}>
                   {name}
                 </NavLink>
               </li>

@@ -1,21 +1,17 @@
 //~ Fonts families
-
-/*
 @font-face {
-  font-family: 'yourFont';
-  src: local('yourFont'), url('../fonts/yourFont.woff2') format('woff2');
+  font-family: 'Charmonman';
+  src: local('Charmonman Regular'), local('Charmonman-Regular'),
+    /*careful, the path is from css folder*/ url('../fonts/charmonman/Charmonman-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'yourFont-Bolder';
-  src: local('yourFont-Bolder'), url('../fonts/yourFont-ExtraBold.woff2') format('woff2');
-  font-weight: bolder;
+  font-family: 'Maven Pro';
+  src: local('Maven Pro'), /*careful, the path is from css folder*/ url('../fonts/mavenpro/MavenPro-VariableFont_wght.ttf') format('truetype');
 }
 
-$font-yourFont: 'yourFont';
-$font-yourFont2: 'yourFont2';
-
-*/
+$font-charmonman: 'Charmonman', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$font-mavenpro: 'Maven Pro', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 //~ Main palette
 $dark-01: #1d1e1c;
@@ -74,9 +70,6 @@ $themeBtn: (
 
 //& Theme Buttons
 $themeNavbar: (
-  light: (
-  ),
-  dark: (
-  ),
+  light: (),
+  dark: (),
 );
-
