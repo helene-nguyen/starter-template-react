@@ -7,10 +7,5 @@ const Router = [
   { id: 3, ...ArticlesRoutes },
 ];
 
-const NavbarLink = [
-  { id: 1, name: 'Accueil', mainPath: '/' },
-  { id: 2, name: 'Articles', mainPath: '/articles' },
-];
-
 export { Router };
 

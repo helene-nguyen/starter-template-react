@@ -1,8 +1,8 @@
 .navbar {
   font-size: 1rem;
 
-  & li {
-    display: inline-block;
+  & ul {
+    display: flex;
 
     & a {
       margin: 2rem;
