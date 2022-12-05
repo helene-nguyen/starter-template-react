@@ -15,7 +15,7 @@ const Layout = ({ pages }) => {
   const [theme, setTheme] = useTheme();
 
   // Detecting mobile or not
-  // console.log(window.navigator.userAgentData.mobile)
+  // console.log(window.navigator.userAgentData.mobile) -> boolean
 
   return (
     <div className={`layout theme--${theme}`}>
