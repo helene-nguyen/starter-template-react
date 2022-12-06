@@ -14,15 +14,20 @@
 
 //~ THEMIFY
 @mixin themify($themes) {
-  @each $nameTheme, $values in $themes {
-    .theme--#{$nameTheme} {
-      $theme-map : $values !global;
+  @each $name, $values in $themes {
+    .theme--#{$name} {
+      $data-map : $values !global;
+      @content;
+    }
+
+    .shape--#{$name} {
+      $data-map : $values !global;
       @content;
     }
   }
 }
 
 @function themed($key) {
-  @return map-get($theme-map, $key);
+  @return map-get($data-map, $key);
 }
 
