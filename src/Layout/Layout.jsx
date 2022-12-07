@@ -21,7 +21,7 @@ const Layout = ({ pages }) => {
     <div className={`layout theme--${theme}`}>
       <Header handleToggleMode={setTheme} theme={theme} />
       <main>
-        <Spinner />
+        {/* <Spinner /> */}
         <Outlet />
       </main>
       <Footer theme={theme} />
