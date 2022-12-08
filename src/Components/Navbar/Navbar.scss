@@ -1,13 +1,20 @@
+@use '../../assets/sass/mixins.scss';
+
 .navbar {
   font-size: 1rem;
 
   & ul {
     display: flex;
 
-  & li {
-    position: relative;
-    z-index: 1;
-  }
+    & li {
+      position: relative;
+      z-index: 1;
+      //display
+      @include mixins.flexbox(center,center);
+      //boxmodel
+      height: 3rem;
+      margin: 1rem;
+    }
     & a {
       margin: 2rem;
       text-decoration: none;

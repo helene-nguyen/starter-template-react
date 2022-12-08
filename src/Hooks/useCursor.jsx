@@ -1,24 +1,7 @@
-//& Import Module
 import { useState, useEffect } from 'react';
-import { Outlet } from 'react-router-dom';
-import { useTheme } from '../Hooks/useTheme';
 
-//& Imports Components
-import Footer from './Footer/Footer';
-import Header from './Header/Header';
-import { Spinner } from '../Components';
-import { Cursor } from '../Components';
-
-//& Import SCSS
-import './Layout.scss';
-
-const Layout = ({ pages }) => {
-  // -------------- Change theme
-  const [theme, setTheme] = useTheme();
-
-  // Detecting mobile or not
-  // console.log(window.navigator.userAgentData.mobile) -> boolean
-
+const useCursor = () => { 
+    
    // -------------- Mouse position
    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
    // console.log(mousePosition);
@@ -56,22 +39,13 @@ const Layout = ({ pages }) => {
      },
    }; // always should be object
  
-   // const onMouseEnter = () => setCursorAnimation('navEffect');
-   // const onMouseLeave = () => setCursorAnimation('default');
+    const setOptions = {
+        onMouseEnter: () => setCursorAnimation('navEffect'),
+        onMouseLeave : () => setCursorAnimation('default')
+    };
+    //TODO : check if it works properly when import custom hook
+    const cursorOptions = { variantsOuter, variantsInner, cursorAnimation };
+    return [cursorOptions, setOptions];
+}
 
-  const cursorOptions = {variantsOuter, variantsInner, cursorAnimation };
-
-  return (
-    <div className={`layout theme--${theme}`}>
-      <Header handleToggleMode={setTheme} theme={theme} />
-      <main>
-        {/* <Spinner /> */}
-        <Cursor  {...cursorOptions} />
-        <Outlet />
-      </main>
-      <Footer theme={theme} />
-    </div>
-  );
-};
-
-export default Layout;
+export { useCursor };

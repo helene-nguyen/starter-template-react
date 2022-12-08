@@ -16,7 +16,6 @@ const Navbar = () => {
   };
   const mouseLeave = (event) => {
     setFoo('default')
-    console.log(event.target);
   };
 
   return (

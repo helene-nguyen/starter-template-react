@@ -1,23 +1,23 @@
 * {
-    cursor: none;
+  cursor: none;
 }
 
 .cursorOuter {
-    border: 1px solid red;
-    height: 32px;
-    width: 32px;
-    border-radius: 50%;
-    position: fixed;
-    top: 0;
-    left: 0;
+  border: 1px solid red;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .cursorInner {
-    background-color: red;
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    position: fixed;
-    top: 0;
-    left: 0;
+  background-color: red;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
