@@ -2,12 +2,13 @@
 
 .button {
     margin: auto 0;
+    position: relative;
+    z-index: 1;
 
   &__form {
     height: 2rem;
     width: 2rem;
     border-radius: 100%;
-    cursor:pointer;
     transition: all 0.25s ease-in-out;
 
     &:hover {
