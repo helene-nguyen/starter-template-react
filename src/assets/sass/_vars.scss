@@ -10,8 +10,14 @@
   src: local('Maven Pro'), /*careful, the path is from css folder*/ url('../fonts/mavenpro/MavenPro-VariableFont_wght.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Dancing Script';
+  src: local('Dancing Script'), /*careful, the path is from css folder*/ url('../fonts/dancing-script/DancingScript-VariableFont_wght.ttf') format('truetype');
+}
+
 $font-charmonman: 'Charmonman', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 $font-mavenpro: 'Maven Pro', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$font-dancing: 'Dancing Script', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 //~ Main palette
 $dark-01: #1d1e1c;

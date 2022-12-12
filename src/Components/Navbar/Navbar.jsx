@@ -14,12 +14,10 @@ const Navbar = ({ ...options }) => {
   
   const mouseEnter = (event) => {
     onMouseEnter();
-    console.log(event.target.className)
     event.currentTarget.classList.add('navbar__box');
   };
   const mouseLeave = (event) => {
     onMouseLeave();
-
     event.currentTarget.classList.remove('navbar__box');
   };
 

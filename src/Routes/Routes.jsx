@@ -10,4 +10,3 @@ const Router = [
 ];
 
 export { Router };
-

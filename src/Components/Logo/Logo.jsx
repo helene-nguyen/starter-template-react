@@ -4,7 +4,7 @@ import './Logo.scss';
 const Logo = () => {
   return (
     <section className="logo">
-        <h1>Yumi Palette</h1>
+        <h1>Palette</h1>
     </section>
   );
 };

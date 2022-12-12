@@ -15,7 +15,8 @@ const useFetch = (apiUrl, method, bodyData, accessToken) => {
 
         const options = {
           method: method,
-          headers: { 'Content-type': 'application/x-www-form-urlencoded' },
+          // headers: { 'Content-type': 'application/x-www-form-urlencoded' },
+          headers: { 'Content-type': 'application/' },
           body: JSON.stringify(bodyData && null),
         };
 
