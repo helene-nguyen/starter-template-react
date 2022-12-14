@@ -1,0 +1,46 @@
+.card__board {
+  display: flex;
+  flex-wrap: wrap;
+  
+  & a {
+    text-decoration: none;
+  }
+}
+
+.card {
+  background-color: rgb(51, 50, 54);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  //boxmodel
+  margin: 1rem;
+  border-radius: 0.5rem;
+  //display
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.25s ease;
+  flex: 1 1 auto;
+
+
+  &__item {
+    margin: 1rem;
+
+    &__header {
+      font-weight: bold;
+    }
+    &__main {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    &__footer {
+      font-size: 0.75rem;
+    }
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+}

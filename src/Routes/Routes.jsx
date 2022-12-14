@@ -1,5 +1,7 @@
 import { NoPage, Home, About, Contact } from '../Pages';
 import { ArticlesRoutes } from './ArticlesRoutes';
+//~ Import Module
+import { Route } from 'react-router-dom';
 
 const Router = [
   { id: 1, isNav : true, name: 'Home', mainPath: '/', mainElement: <Home /> },
@@ -9,4 +11,8 @@ const Router = [
   { id: 5, isNav : false, name: 'Contact', mainPath: 'contact', mainElement: <Contact /> },
 ];
 
-export { Router };
+const mainRoutes = Router.map(({ id, mainPath, mainElement }) => <Route key={id} path={mainPath} element={mainElement} />);
+
+const articleRoutes = Router.map(({ id, articlePath, articleElement }) => <Route key={id} path={articlePath} element={articleElement} />);
+
+export { Router, mainRoutes, articleRoutes };

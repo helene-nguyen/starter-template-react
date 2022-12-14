@@ -3,7 +3,6 @@ import './Navbar.scss';
 
 //& Imports Modules
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
 
 //& Import Routes
 import { Router } from '../../Routes/Routes';

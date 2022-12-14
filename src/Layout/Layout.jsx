@@ -1,5 +1,4 @@
 //& Import Module
-import { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import { useTheme } from '../Hooks/useTheme';
 import { useCursor } from '../Hooks/useCursor';
@@ -7,7 +6,6 @@ import { useCursor } from '../Hooks/useCursor';
 //& Imports Components
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
-import { Spinner } from '../Components';
 import { Cursor } from '../Components';
 
 //& Import SCSS
@@ -27,7 +25,6 @@ const Layout = ({ pages }) => {
     <div className={`layout theme--${theme}`}>
       <Header handleToggleMode={setTheme} theme={theme} {...setCursorOptions} />
       <main>
-        {/* <Spinner /> */}
         <Cursor {...cursorOptions} />
         <Outlet />
       </main>

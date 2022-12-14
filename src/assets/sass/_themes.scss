@@ -20,12 +20,12 @@
   }
 
 
-  header {
+  .header {
     // transition: all 0.30s ease-in-out;
     background-color: mixins.themed('background');
   }
 
-  footer {
+  .footer {
     // transition: all 0.30s ease-in-out;
     background-color: mixins.themed('background');
   }

@@ -16,7 +16,7 @@ const useFetch = (apiUrl, method, bodyData, accessToken) => {
         const options = {
           method: method,
           // headers: { 'Content-type': 'application/x-www-form-urlencoded' },
-          headers: { 'Content-type': 'application/' },
+          headers: { 'Content-type': 'application/json' },
           body: JSON.stringify(bodyData && null),
         };
 
@@ -30,7 +30,7 @@ const useFetch = (apiUrl, method, bodyData, accessToken) => {
           throw new Error(`An error has occured : ${response.status}`);
         }
 
-        setIsLoading(true);
+        setIsLoading(false);
         setData(result);
 
         // clean up
