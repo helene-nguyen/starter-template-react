@@ -13,7 +13,6 @@ const Articles = () => {
 
   return (
     <section className="articles">
-      <h1>Articles</h1>
       <div className="card__board">
         {!!isLoading ? <Spinner /> : data.map(({ id, ...elem }) =>
           <Link key={id} to={`/articles/${id}`}>

@@ -4,7 +4,7 @@ export const ArticlesRoutes = {
   name: 'Articles',
   isNav : true,
   // main
-  mainPath: 'articles/',
+  mainPath: 'articles',
   mainElement: <Articles />,
   // params
   articlePath: 'articles/:articleId',

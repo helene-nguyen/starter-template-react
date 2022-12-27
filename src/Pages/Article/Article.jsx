@@ -11,7 +11,6 @@ const Article = () => {
   const apiURL = `http://localhost:4200/api/v1/posts/${articleId}`;
   // useFetch(apiURL, setArticles, 'GET')
   const [data, isLoading] = useFetch(apiURL, 'GET');
-  console.log('data: ', data);
 
   return (
     <section className="article">
