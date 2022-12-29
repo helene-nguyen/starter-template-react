@@ -1,8 +1,7 @@
 //& Import modules
-import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-import './Cursor.scss';
+// import './Cursor.scss';
 
 const Cursor = ({ variantsOuter, variantsInner, cursorAnimation }) => {
   return (

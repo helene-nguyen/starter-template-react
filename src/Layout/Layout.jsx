@@ -38,7 +38,7 @@ const Layout = ({ pages }) => {
       <Header handleToggleMode={setTheme} theme={theme} {...setCursorOptions} />
       <Title title={title} />
       <main>
-        {!isMobile && <Cursor {...cursorOptions} />}
+        {/* {!isMobile && <Cursor {...cursorOptions} />} */}
         <Outlet />
       </main>
       <Footer theme={theme} />
