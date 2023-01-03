@@ -2,7 +2,7 @@ import { Articles, Article } from '../Pages';
 
 export const ArticlesRoutes = {
   name: 'Articles',
-  isNav : true,
+  isNav: true,
   // main
   mainPath: 'articles',
   mainElement: <Articles />,
@@ -10,4 +10,3 @@ export const ArticlesRoutes = {
   articlePath: 'articles/:articleId',
   articleElement: <Article />,
 };
-

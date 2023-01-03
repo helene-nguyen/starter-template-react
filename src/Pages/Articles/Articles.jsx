@@ -15,7 +15,7 @@ const Articles = () => {
     <section className="articles">
       <div className="card__board">
         {!!isLoading ? <Spinner /> : data.map(({ id, ...elem }) =>
-          <Link key={id} to={`/articles/${id}`}>
+          <Link className="card" key={id} to={`/articles/${id}`}>
             <Card {...elem} />
           </Link>
           )}

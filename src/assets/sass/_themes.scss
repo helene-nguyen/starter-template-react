@@ -22,7 +22,9 @@
 
   .header {
     // transition: all 0.30s ease-in-out;
-    background-color: mixins.themed('background');
+    background-color: mixins.themed('backgroundBlur');
+    backdrop-filter: blur(5px);
+    z-index: 2;
   }
 
   .footer {

@@ -26,6 +26,8 @@ $dark-03: #272629;
 $light-01: #fefcff;
 $light-02: #fff;
 $red-01: #d40035;
+$dark-blur: #1d1e1cce;
+$light-blur: #fefcffc9;
 
 //~ Box shadows
 $box-shadow-01: rgba(0, 0, 0, 0.2) 0px 0px 50px 8px;
@@ -42,13 +44,15 @@ $themeSite: (
     text: $dark-01,
     link: $dark-01,
     spinner: $dark-01,
-  ),
-  dark: (
-    background: $dark-01,
-    title: $red-01,
-    text: $light-01,
-    link: $light-01,
-    spinner: $light-01,
+    backgroundBlur: $light-blur,
+    ),
+    dark: (
+      background: $dark-01,
+      title: $red-01,
+      text: $light-01,
+      link: $light-01,
+      spinner: $light-01,
+      backgroundBlur: $dark-blur,
   ),
 );
 

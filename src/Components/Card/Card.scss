@@ -1,10 +1,9 @@
 .card__board {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  
-  & a {
-    text-decoration: none;
-  }
+  width: 90%;
+  margin: auto;
 }
 
 .card {
@@ -20,8 +19,8 @@
   justify-content: center;
   align-items: center;
   transition: 0.25s ease;
-  flex: 1 1 auto;
-
+  text-decoration: none;
+  flex: 1 1 15rem;
 
   &__item {
     margin: 1rem;

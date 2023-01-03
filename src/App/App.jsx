@@ -9,8 +9,7 @@ import { Routes, Route } from 'react-router-dom';
 import './App.scss';
 
 const App = () => {
-
-    return (
+  return (
     <Routes>
       <Route path="/" element={<Layout pages={Router} />}>
         {mainRoutes}
