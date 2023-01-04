@@ -13,7 +13,7 @@ import './Layout.scss';
 
 const Layout = ({ pages }) => {
       // Detecting mobile or not
-  const isMobile = window.navigator.userAgentData.mobile;
+  // const isMobile = window.navigator.userAgentData.mobile;
   
   // -------------- Change theme
   const [theme, setTheme] = useTheme();

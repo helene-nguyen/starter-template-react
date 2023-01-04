@@ -37,6 +37,7 @@ const Home = () => {
   const done = taskSlice.done;
   const allTasksSlice = taskSlice.tasks;
   const taskToAdd = 'Fredo cadeaux';
+  const add = () => dispatch(addTaskSlice(taskToAdd));
 
   //* ------------------ FILTER CATEGORY TESTS --------------- *//
 
@@ -88,7 +89,8 @@ const Home = () => {
         )}
 
         <section className="redux__btn">
-          <button onClick={() => dispatch(addTaskSlice(taskToAdd))}>Add task slice</button>
+          {/* <button onClick={() => dispatch(addTaskSlice(taskToAdd))}>Add task slice</button> */}
+          <button onClick={add}>Add task slice</button>
           <button onClick={() => dispatch(toggleDone())}>Toogle boolean task slice</button>
         </section>
       </div>
